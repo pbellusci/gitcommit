@@ -1,0 +1,15 @@
+#!/bin/bash
+clear
+echo "First Message?"
+read msg
+echo "Ticket?"
+read ticket
+echo "type?"
+read type
+echo "when?"
+read when
+echo "time?"
+read time
+echo "Seccond msg?"
+read seccondmsg
+git commit -a -m "$msg $ticket work $type $when $time ${seccondmsg:-$msg}" 

@@ -1,0 +1,25 @@
+{
+  "name": "gitnodecommit",
+  "version": "1.0.0",
+  "description": "Script to automate git commit msg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbellusci/gitcommit.git"
+  },
+  "author": "Patricio Bellusci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbellusci/gitcommit/issues"
+  },
+  "bin": {
+    "gitcmt": "./index.js"
+  },
+  "homepage": "https://github.com/pbellusci/gitcommit#readme",
+  "dependencies": {
+    "scanf": "^1.0.2"
+  }
+}
