@@ -13,11 +13,11 @@ read time
 echo "Seccond msg?"
 read seccondmsg
 
-echo "Command will be: git commit -a -m $msg #$ticket work $typeTicket $when $time ${seccondmsg:-$msg}" 
+echo "Command will be: git commit -a -m \"$msg #$ticket work $typeTicket $when $time ${seccondmsg:-$msg}\"" 
 read -r -p "Are you sure? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
-	git commit -a -m "$msg #$ticket work $type $when $time ${seccondmsg:-$msg}"
+	git commit -a -m "$msg #$ticket work $typeTicket $when $time ${seccondmsg:-$msg}"
 else
     exit 0
 fi
